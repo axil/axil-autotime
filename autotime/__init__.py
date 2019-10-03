@@ -33,7 +33,7 @@ class LineWatcher(object):
 
         if self.start_time:
             diff = stop_time - self.start_time
-            assert diff > 0
+            assert diff >= 0
             print('time: {}'.format(format_delta(diff)))
 
 
