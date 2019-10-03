@@ -2,6 +2,7 @@ from __future__ import print_function
 
 import time
 import sys
+import re
 
 from IPython.core.magics.execution import _format_time as format_delta
 
@@ -28,10 +29,12 @@ class LineWatcher(object):
     def start(self):
         self.start_time = _timer()
 
-    def stop(self):
-        stop_time = _timer()
+    def stop(self, result):
+        raw = result.info.raw_cell
+        defs_only = all(re.match('def|class|\s', line) for line in raw.split('\n'))
 
-        if self.start_time:
+        if not defs_only and self.start_time:
+            stop_time = _timer()
             diff = stop_time - self.start_time
             assert diff >= 0
             print('time: {}'.format(format_delta(diff)))
