@@ -17,5 +17,5 @@ Run `%load_ext autotime` to load the extension.
 ## Want to turn it off?
 
 ```python
-In [5]: %unload_ext autotime
+In [7]: %unload_ext autotime
 ```
