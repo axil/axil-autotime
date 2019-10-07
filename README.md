@@ -1,10 +1,10 @@
 # ipython-autotime
-Time everything in IPython
+Time everything in IPython. Ignores function and class definitions.
 
 ## Installation:
 
 ```
-$ pip install ipython-autotime
+$ pip install axil-autotime
 ```
 
 ## Examples
@@ -21,6 +21,8 @@ Out[3]: 3
 time: 2.50 ms
 
 In [4]: x + ''
+```
+```
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-5-bde712cacec5> in <module>()

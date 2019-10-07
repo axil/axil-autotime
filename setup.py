@@ -10,11 +10,11 @@ with open('README.md') as f:
 
 
 setup(
-    name='ipython-autotime',
+    name='axil-autotime',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    author='Phillip Cloud',
-    description='Time everything in IPython',
+    author='Lev Maximov',
+    description='An improved version of Phillip Cloud\'s Time everything in IPython',
     long_description=long_description,
     license='Apache',
     install_requires=['ipython'],
