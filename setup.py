@@ -14,8 +14,9 @@ setup(
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     author='Lev Maximov',
-    description='An improved version of Phillip Cloud\'s Time everything in IPython',
+    description='An improved version of Time everything in IPython by Phillip Cloud',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     license='Apache',
     install_requires=['ipython'],
     classifiers=[
@@ -29,5 +30,6 @@ setup(
         'Topic :: Scientific/Engineering',
         'Topic :: Utilities',
     ],
-    packages=find_packages(),
+    packages=['autotime'],
+    zip_safe=False,
 )
