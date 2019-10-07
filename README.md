@@ -1,5 +1,6 @@
-# ipython-autotime
-Time everything in IPython. Ignores function and class definitions.
+# axil-autotime
+An improved version of `ipython-autotime` by Phillip Cloud.  
+Ignores function and class definitions.
 
 ## Installation:
 
@@ -7,30 +8,11 @@ Time everything in IPython. Ignores function and class definitions.
 $ pip install axil-autotime
 ```
 
-## Examples
+## Usage
 
-```python
-In [1]: %load_ext autotime
-time: 1433692.87 s
+Run `%load_ext autotime` to load the extension.
 
-In [2]: x = 1
-time: 730.99 us
-
-In [3]: x + 2
-Out[3]: 3
-time: 2.50 ms
-
-In [4]: x + ''
-```
-```
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-5-bde712cacec5> in <module>()
-----> 1 x + ''
-
-    TypeError: unsupported operand type(s) for +: 'int' and 'str'
-    time: 156.05 ms
-```
+<img src="https://raw.githubusercontent.com/axil/axil-autotime/master/img/screenshot.png" width="400">
 
 ## Want to turn it off?
 
