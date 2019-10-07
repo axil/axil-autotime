@@ -1,6 +1,7 @@
 # axil-autotime
-An improved version of `ipython-autotime` by Phillip Cloud.  
-Ignores function and class definitions.
+An improved version of `ipython-autotime` by Phillip Cloud:  
+&nbsp; &nbsp; – uses better timer function on windows;  
+&nbsp; &nbsp; – ignores function and class definitions.
 
 ## Installation:
 
