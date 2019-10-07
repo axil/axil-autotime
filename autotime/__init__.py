@@ -52,6 +52,7 @@ def unload_ipython_extension(ip):
     ip.events.unregister('pre_run_cell', timer.start)
     ip.events.unregister('post_run_cell', timer.stop)
 
+
 from ._version import get_versions
 __version__ = get_versions()['version']
 del get_versions
