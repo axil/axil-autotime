@@ -3,7 +3,8 @@ from __future__ import print_function
 import time
 import sys
 import re
-from ._version import version as __version__
+
+__version__ = '0.3'
 
 from time import strftime, localtime
 
